@@ -34,7 +34,9 @@ class ViewController: UIViewController {
     }
     
     @IBAction func presentModalWithLightBlackTheme() {
-        let webVC = SwiftModalWebVC(urlString: "https://www.google.com", theme: .lightBlack, dismissButtonStyle: .cross)
+        let webVC = SwiftModalWebVC(urlString: "https://www.google.com", theme: .lightBlue, dismissButtonStyle: .cross)
+        webVC.modalTransitionStyle = .coverVertical
+        webVC.modalPresentationStyle = .overFullScreen
         self.present(webVC, animated: true, completion: nil)
     }
     

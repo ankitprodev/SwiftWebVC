@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		0055F7A61E259F1A000ECD54 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0055F7931E259F1A000ECD54 /* Media.xcassets */; };
 		0055F7A71E259F1A000ECD54 /* SwiftWebVC.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0055F7951E259F1A000ECD54 /* SwiftWebVC.strings */; };
-		0055F7A81E259F1A000ECD54 /* SwiftModalWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055F7A11E259F1A000ECD54 /* SwiftModalWebVC.swift */; };
-		0055F7A91E259F1A000ECD54 /* SwiftWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055F7A21E259F1A000ECD54 /* SwiftWebVC.swift */; };
 		0055F7AA1E259F1A000ECD54 /* SwiftWebVCActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055F7A31E259F1A000ECD54 /* SwiftWebVCActivity.swift */; };
 		0055F7AB1E259F1A000ECD54 /* SwiftWebVCActivityChrome.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055F7A41E259F1A000ECD54 /* SwiftWebVCActivityChrome.swift */; };
 		0055F7AC1E259F1A000ECD54 /* SwiftWebVCActivitySafari.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0055F7A51E259F1A000ECD54 /* SwiftWebVCActivitySafari.swift */; };
@@ -19,6 +17,8 @@
 		00FFF85E1E09977500015C59 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFF85C1E09977500015C59 /* Main.storyboard */; };
 		00FFF8601E09977500015C59 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 00FFF85F1E09977500015C59 /* Assets.xcassets */; };
 		00FFF8631E09977500015C59 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 00FFF8611E09977500015C59 /* LaunchScreen.storyboard */; };
+		BD01AB9B2C1FEC5000A4DCD4 /* SwiftModalWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01AB992C1FEC5000A4DCD4 /* SwiftModalWebVC.swift */; };
+		BD01AB9E2C1FED8800A4DCD4 /* SwiftWebVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD01AB9D2C1FED8800A4DCD4 /* SwiftWebVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,8 +34,6 @@
 		0055F79E1E259F1A000ECD54 /* vi */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = vi; path = vi.lproj/SwiftWebVC.strings; sourceTree = "<group>"; };
 		0055F79F1E259F1A000ECD54 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/SwiftWebVC.strings"; sourceTree = "<group>"; };
 		0055F7A01E259F1A000ECD54 /* zh-Hant */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hant"; path = "zh-Hant.lproj/SwiftWebVC.strings"; sourceTree = "<group>"; };
-		0055F7A11E259F1A000ECD54 /* SwiftModalWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModalWebVC.swift; sourceTree = "<group>"; };
-		0055F7A21E259F1A000ECD54 /* SwiftWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVC.swift; sourceTree = "<group>"; };
 		0055F7A31E259F1A000ECD54 /* SwiftWebVCActivity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivity.swift; sourceTree = "<group>"; };
 		0055F7A41E259F1A000ECD54 /* SwiftWebVCActivityChrome.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivityChrome.swift; sourceTree = "<group>"; };
 		0055F7A51E259F1A000ECD54 /* SwiftWebVCActivitySafari.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVCActivitySafari.swift; sourceTree = "<group>"; };
@@ -46,6 +44,8 @@
 		00FFF85F1E09977500015C59 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		00FFF8621E09977500015C59 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		00FFF8641E09977500015C59 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BD01AB992C1FEC5000A4DCD4 /* SwiftModalWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftModalWebVC.swift; sourceTree = "<group>"; };
+		BD01AB9D2C1FED8800A4DCD4 /* SwiftWebVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftWebVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,8 +64,8 @@
 			children = (
 				0055F7921E259F1A000ECD54 /* Resources */,
 				0055F7941E259F1A000ECD54 /* Strings */,
-				0055F7A11E259F1A000ECD54 /* SwiftModalWebVC.swift */,
-				0055F7A21E259F1A000ECD54 /* SwiftWebVC.swift */,
+				BD01AB992C1FEC5000A4DCD4 /* SwiftModalWebVC.swift */,
+				BD01AB9D2C1FED8800A4DCD4 /* SwiftWebVC.swift */,
 				0055F7A31E259F1A000ECD54 /* SwiftWebVCActivity.swift */,
 				0055F7A41E259F1A000ECD54 /* SwiftWebVCActivityChrome.swift */,
 				0055F7A51E259F1A000ECD54 /* SwiftWebVCActivitySafari.swift */,
@@ -147,7 +147,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0820;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 1320;
 				ORGANIZATIONNAME = "Myles Ringle";
 				TargetAttributes = {
 					00FFF8541E09977500015C59 = {
@@ -159,7 +159,7 @@
 			};
 			buildConfigurationList = 00FFF8501E09977500015C59 /* Build configuration list for PBXProject "SwiftWebVCExample" */;
 			compatibilityVersion = "Xcode 3.2";
-			developmentRegion = English;
+			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
@@ -206,11 +206,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0055F7AB1E259F1A000ECD54 /* SwiftWebVCActivityChrome.swift in Sources */,
-				0055F7A81E259F1A000ECD54 /* SwiftModalWebVC.swift in Sources */,
 				00FFF85B1E09977500015C59 /* ViewController.swift in Sources */,
+				BD01AB9E2C1FED8800A4DCD4 /* SwiftWebVC.swift in Sources */,
 				0055F7AC1E259F1A000ECD54 /* SwiftWebVCActivitySafari.swift in Sources */,
+				BD01AB9B2C1FEC5000A4DCD4 /* SwiftModalWebVC.swift in Sources */,
 				00FFF8591E09977500015C59 /* AppDelegate.swift in Sources */,
-				0055F7A91E259F1A000ECD54 /* SwiftWebVC.swift in Sources */,
 				0055F7AA1E259F1A000ECD54 /* SwiftWebVCActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +269,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -276,8 +277,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -302,7 +305,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -326,6 +329,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -333,8 +337,10 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -353,7 +359,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -367,7 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftWebVCExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftweb.SwiftWebVCExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -380,7 +386,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwiftWebVCExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swiftweb.SwiftWebVCExample;
 				PRODUCT_NAME = "$(TARGET_NAME)";

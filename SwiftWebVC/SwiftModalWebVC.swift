@@ -46,15 +46,15 @@ public class SwiftModalWebVC: UINavigationController {
         
         let dismissButtonImageName = (dismissButtonStyle == .arrow) ? "SwiftWebVCDismiss" : "SwiftWebVCDismissAlt"
         let doneButton = UIBarButtonItem(image: SwiftWebVC.bundledImage(named: dismissButtonImageName),
-                                         style: UIBarButtonItemStyle.plain,
+                                         style: UIBarButtonItem.Style.plain,
                                          target: webViewController,
                                          action: #selector(SwiftWebVC.doneButtonTapped))
         
         switch theme {
         case .lightBlue:
             doneButton.tintColor = nil
-            webViewController.buttonColor = nil
-            webViewController.titleColor = UIColor.black
+            webViewController.buttonColor = UIColor.white
+            webViewController.titleColor = UIColor.white
             UINavigationBar.appearance().barStyle = UIBarStyle.default
         case .lightBlack:
             doneButton.tintColor = UIColor.darkGray
