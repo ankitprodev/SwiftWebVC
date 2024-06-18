@@ -240,11 +240,11 @@ public class SwiftWebVC: UIViewController {
     
     @objc func attachmentTapped(_ sender: UIBarButtonItem) {
         currentURL = webView.url
-        self.presentingViewController?.presentingViewController?.dismiss(animated: true) {
+//        self.presentingViewController?.presentingViewController?.dismiss(animated: true) {
             if let url = self.currentURL {
                 NotificationCenter.default.post(name: NSNotification.Name(rawValue: "DidSelectAttachmentURL"), object: url)
             }
-        }
+//        }
     }
     
     @objc func reloadTapped(_ sender: UIBarButtonItem) {
