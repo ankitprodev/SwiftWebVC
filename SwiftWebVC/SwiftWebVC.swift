@@ -340,6 +340,14 @@ extension SwiftWebVC: WKNavigationDelegate {
         
         let hostAddress = navigationAction.request.url?.host
         
+        if navigationAction.navigationType == .linkActivated {
+            if let url = navigationAction.request.url {
+                webView.load(URLRequest(url: url))
+                decisionHandler(.cancel)
+                return
+            }
+        }
+        
         if (navigationAction.targetFrame == nil) {
             if UIApplication.shared.canOpenURL(url!) {
                 UIApplication.shared.openURL(url!)
